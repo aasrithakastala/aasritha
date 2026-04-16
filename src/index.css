@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  --color-neon-cyan: #00f3ff;
+  --color-neon-magenta: #ff00ff;
+  --color-neon-green: #39ff14;
+  --color-surface: #111111;
+  --color-text-dim: #888888;
+}
+
+:root {
+  --bg: #050505;
+  --surface: #111111;
+  --neon-cyan: #00f3ff;
+  --neon-magenta: #ff00ff;
+  --neon-green: #39ff14;
+  --text-dim: #888888;
+}
+
+body {
+  background-color: var(--bg);
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Custom scrollbar for the sidebar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
